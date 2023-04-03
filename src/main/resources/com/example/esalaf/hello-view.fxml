@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="493.0" prefWidth="464.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.LoginController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <Label fx:id="lnom" text="Nom">
+      <font>
+         <Font name="System Italic" size="13.0" />
+      </font></Label>
+   <TextField fx:id="nom" prefHeight="32.0" prefWidth="358.0" text="lina" />
+   <Label fx:id="ltele" text="Telephone :">
+      <font>
+         <Font name="System Italic" size="13.0" />
+      </font></Label>
+   <TextField fx:id="tele" text="099877" />
+   <HBox prefHeight="35.0" prefWidth="424.0">
+      <children>
+      
+      
+         <Button fx:id="ok" onAction="#onSaveButtonClick" style="-fx-background-color: #E0FFFF; -fx-cursor: hand;" text="Save!">
+            <font>
+               <Font name="System Bold Italic" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="Delete" alignment="CENTER" mnemonicParsing="false" onAction="#onDelete" style="-fx-background-color: #E0FFFF; -fx-cursor: hand;" text="Delete!">
+            <font>
+               <Font name="System Bold Italic" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="Update" mnemonicParsing="false" onAction="#onUpdate" style="-fx-background-color: #E0FFFF; -fx-cursor: hand;" text="Update!" textAlignment="CENTER">
+            <font>
+               <Font name="System Bold Italic" size="12.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+   <TableView fx:id="mytab" prefHeight="200.0" prefWidth="200.0">
+      <columns>
+         <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+         <TableColumn fx:id="col_nom" prefWidth="75.0" text="Nom" />
+         <TableColumn fx:id="col_tele" prefWidth="75.0" text="Tele" />
+      </columns>
+   </TableView>
+   <Button id="logout" fx:id="logout" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onLogout" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #8B0000; -fx-cursor: hand;" text="Logout" textFill="#fcf6f6">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+   </Button>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button fx:id="enregistre" mnemonicParsing="false" onAction="#onEnregistre" prefHeight="25.0" prefWidth="429.0" style="-fx-background-color: #F8F8FF; -fx-cursor: hand;" text="                                                             Voir la commande enregesitre -&gt;">
+            <font>
+               <Font name="System Italic" size="13.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+</VBox>

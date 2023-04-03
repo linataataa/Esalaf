@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.CommandeController">
+   <children>
+      <Label prefHeight="43.0" prefWidth="602.0" style="-fx-background-color: #C0C0C0;" text="                                                                                     Produit" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="Produit" prefHeight="25.0" prefWidth="549.0" />
+      <Label prefHeight="37.0" prefWidth="600.0" style="-fx-background-color: #C0C0C0;" text="                                                                                       Prix">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="prix" prefHeight="12.0" prefWidth="600.0" />
+      <Button fx:id="save" mnemonicParsing="false" onAction="#onSaveButton" style="-fx-background-color: #2F4F4F;" text="Save" textFill="#eee7e7" underline="true">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></Button>
+      <TableView fx:id="Tab" prefHeight="205.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="produit" prefWidth="75.0" text="Produit" />
+          <TableColumn fx:id="ID_client" prefWidth="75.0" text="Prix" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
